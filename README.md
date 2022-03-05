@@ -1,5 +1,5 @@
-# Black hat python :)
-Code from NSP Black hat python vol 2
+# Black Hat Python :)
+Code from Black Hat Python vol 2
 # Networking
 Contents: 
 1. [Basic tcp/udp server + client](https://github.com/stackviolator/blackhatpython/tree/main/networking/basics) 
