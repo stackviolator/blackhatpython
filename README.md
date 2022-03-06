@@ -1,6 +1,6 @@
 # Black Hat Python :)
 Code from Black Hat Python vol 2 \
-Contents: 
+# Contents: 
 # Networking
 1. [Basic tcp/udp server + client](https://github.com/stackviolator/blackhatpython/tree/main/networking/basics) 
 2. [Python replication of netcat](https://github.com/stackviolator/blackhatpython/tree/main/networking/netcat/netcat.py) 
