@@ -8,3 +8,4 @@ Code from Black Hat Python vol 2
 # ***Sniffer***
 1. [UDP Host Discovery](https://github.com/stackviolator/blackhatpython/blob/main/sniffer/udp_hd.py)
 2. [Packet sniffing + protocol discovery](https://github.com/stackviolator/blackhatpython/blob/main/sniffer/sniffer_ip_header_decode.py)
+3. [Packet sniffing + udp host discovery](https://github.com/stackviolator/blackhatpython/blob/main/sniffer/scanner.py)
