@@ -48,6 +48,7 @@ class Arper:
         poison_victim.psrc = self.gateway
         poison_victim.pdst = self.victim
         poison_victim.hwdst = self.victimmac
+
         print(f"ip src: {poison_victim.psrc}")
         print(f"ip dst: {poison_victim.pdst}")
         print(f"mac dst: {poison_victim.hwdst}")
