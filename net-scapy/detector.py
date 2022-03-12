@@ -11,6 +11,7 @@ TRAIN = "~/Desktop/training"
 
 def detect(srcdir=ROOT, tgtdir=FACES, train_dir=TRAIN):
     for fname in os.listdir(srcdir):
+        # Looking for faces, most likely jpgs
         if not fname.upper().endswith('.JPG'):
             continue
         fullname = os.path.join(srcdir, fname)

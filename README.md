@@ -12,3 +12,5 @@ Code from Black Hat Python vol 2
 # ***Scapy Tooling***
 1. [Mail Credential Sniffing tool](https://github.com/stackviolator/blackhatpython/blob/main/net-scapy/mail_sniffer.py)
 2. [ARP-Poisoning tool](https://github.com/stackviolator/blackhatpython/blob/main/net-scapy/arper.py)
+3. [PCAP Processing to find jpgs](https://github.com/stackviolator/blackhatpython/blob/main/net-scapy/recapper.py)
+4. [Facial recognition on pcaps with OpenCV](https://github.com/stackviolator/blackhatpython/blob/main/net-scapy/detector.py)
