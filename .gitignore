@@ -4,3 +4,4 @@ venv
 networking/ssh-tunnel/test_key
 networking/ssh-tunnel/test_rsa.key
 
+net-scapy/*.pcap
