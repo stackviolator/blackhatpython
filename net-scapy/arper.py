@@ -24,7 +24,7 @@ class Arper:
         conf.iface = interface
         conf.verb = 0
 
-        print(f"Initialized interface {interface}")
+        print(f"Initialized interface {interface}:")
         print(f"Gateway ({gateway}) is at {self.gatewaymac}")
         print(f"Victim ({victim}) is at {self.victimmac}")
         print('-' * 30)
@@ -85,9 +85,10 @@ class Arper:
                 time.sleep(2)
 
     def sniff(self, count=100):
+        '''
         # Sleep for 5 to let the threads start properly
         time.sleep(5)
-        print(f"Sniffinf {count} packets")
+        print(f"Sniffing {count} packets")
         # Filters for packets that have the designated IP address
         bpf_filter = 'ip host %s' % victim
         packets = sniff(count=count, filter=bpf_filter, iface = self.interface)
