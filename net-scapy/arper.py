@@ -85,7 +85,6 @@ class Arper:
                 time.sleep(2)
 
     def sniff(self, count=100):
-        '''
         # Sleep for 5 to let the threads start properly
         time.sleep(5)
         print(f"Sniffing {count} packets")
