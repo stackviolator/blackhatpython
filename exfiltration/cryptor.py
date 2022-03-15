@@ -33,11 +33,34 @@ def encrypt(plaintext):
 
     session_key = get_random_bytes(16)
     cipher_AES = AES.new(session_key, AES.MODE_EAX)
-    ciphertext, tag = cipher_aes.encrypt_and_digest(compressed_text)
+    ciphertext, tag = cipher_AES.encrypt_and_digest(compressed_text)
 
     cipher_rsa, _ = get_rsa_cipher('pub')
     encrypted_session_key = cipher_rsa.encrypt(session_key)
 
-    msg_payload = encrypted_session_key + cipher_aes.nonce + tag + ciphertext
+    msg_payload = encrypted_session_key + cipher_AES.nonce + tag + ciphertext
     encrypted = base64.encodebytes(msg_payload)
     return encrypted
+
+def decrypt(encrypted):
+    # Decode the bytes into a string
+    encrypted_bytes = BytesIO(base64.decodebytes(encrypted))
+    cipher_rsa, keysize_in_bytes = get_rsa_cipher('pri')
+
+    encrypted_session_key = encrypted_bytes.read(keysize_in_bytes)
+    nonce = encrypted_bytes.read(16)
+    tag = encrypted_bytes.read(16)
+    ciphertext = encrypted_bytes.read()
+
+    session_key = cipher_rsa.decrypt(encrypted_session_key)
+    cipher_aes = AES.new(session_key, AES.MODE_EAX, nonce)
+    decrypted = cipher_aes.decrypt_and_verify(ciphertext, tag)
+
+    plaintext = zlib.decompress(decrypted)
+    return plaintext
+
+if __name__ == "__main__":
+    generate()
+    plaintext = b"Balls in my face lol"
+
+    print(decrypt(encrypt(plaintext)))
