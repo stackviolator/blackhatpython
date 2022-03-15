@@ -19,3 +19,5 @@ Code from Black Hat Python vol 2
 2. [Screenshot Desktop](https://github.com/stackviolator/blackhatpython/blob/main/trojan_modules/screenshotter.py)
 3. [Shellcode Execution](https://github.com/stackviolator/blackhatpython/blob/main/trojan_modules/shell_exec.py)
 4. [Sandbox Detection](https://github.com/stackviolator/blackhatpython/blob/main/trojan_modules/sandbox_dectect.py)
+# ***Data Exfiltration***
+1. [AES + RSA Encryption](https://github.com/stackviolator/blackhatpython/blob/main/exfiltration/cryptor.py) 
