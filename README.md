@@ -17,4 +17,5 @@ Code from Black Hat Python vol 2
 # ***Trojan Modules***
 1. [Keylogger](https://github.com/stackviolator/blackhatpython/blob/main/trojan_modules/keylogger.py)
 2. [Screenshot Desktop](https://github.com/stackviolator/blackhatpython/blob/main/trojan_modules/screenshotter.py)
-3. [Shellcode execution](https://github.com/stackviolator/blackhatpython/blob/main/trojan_modules/shell_exec.py)
+3. [Shellcode Execution](https://github.com/stackviolator/blackhatpython/blob/main/trojan_modules/shell_exec.py)
+4. [Sandbox Detection](https://github.com/stackviolator/blackhatpython/blob/main/trojan_modules/sandbox_dectect.py)
