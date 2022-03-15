@@ -10,3 +10,5 @@ trojan_modules/log.txt
 
 exfiltration/key.pri
 exfiltration/key.pub
+
+screenshot.bmp
