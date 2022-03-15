@@ -7,3 +7,6 @@ networking/ssh-tunnel/test_rsa.key
 net-scapy/*.pcap
 
 trojan_modules/log.txt
+
+exfiltration/key.pri
+exfiltration/key.pub
